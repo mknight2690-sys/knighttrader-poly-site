@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KnightTrader Poly — Download</title>
+  <meta name="description" content="Download KnightTrader Poly for Windows or Mac. Local Polymarket assistant for 5-minute crypto up/down markets. $39 one-time." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-mark">KT</span>
+        <span class="logo-text">KnightTrader</span>
+        <span class="logo-badge">Poly</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#how-it-works">How it works</a>
+        <a href="#download">Download</a>
+        <a href="#what-you-get">What you get</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://mknight2690-sys.github.io/knighttrader-poly-payment/">Buy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="purchase-success-banner" class="purchase-success-banner hidden">
+    <div class="container">
+      <strong>Payment confirmed.</strong> Pick Windows or Mac below and run the installer.
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Local desktop app · Polymarket CLOB v2</div>
+        <h1>Download KnightTrader Poly</h1>
+        <p class="hero-sub"><strong>Your <span data-kt-price>$39</span> payment unlocks the Windows and Mac installers.</strong> The app installs next to KnightTrader BloFin and keeps its own folder, so the two do not share keys, ports, or a tray icon. On first open, paste your Polymarket API key, secret, passphrase, and wallet private key. You also need a one-time ~$5 Nous Portal credit top-up, paid to Nous, to create the AI key.</p>
+        <div class="hero-download-section">
+          <div class="platform-selector" role="radiogroup" aria-label="Choose your operating system">
+            <button class="platform-btn active" data-platform="windows" role="radio" aria-checked="true">Windows</button>
+            <button class="platform-btn" data-platform="mac" role="radio" aria-checked="false">Mac</button>
+          </div>
+          <div class="download-actions">
+            <button type="button" class="btn-primary btn-lg btn-download-windows">Download for Windows</button>
+            <button type="button" class="btn-primary btn-lg hidden btn-download-mac">Download for Mac</button>
+          </div>
+        </div>
+        <p class="hero-trust">Local-first. The private key and CLOB secret stay on this PC. The desk reads the Polymarket account those keys belong to.</p>
+        <div class="hero-proof">
+          <div class="proof-item">
+            <div class="proof-number">30–60 min</div>
+            <div class="proof-label">First-time setup</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-number">5 min</div>
+            <div class="proof-label">Check cadence</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-number">5 shares</div>
+            <div class="proof-label">Minimum bet until +50%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="risk-banner">
+      <div class="container">
+        <div class="risk-banner-inner">
+          <div class="risk-banner-title">Read this before you spend any money</div>
+          <p>KnightTrader Poly sends orders to <strong>your Polymarket account</strong>. Five-minute crypto up/down contracts can expire against you. The assistant is instructed to stay at the 5-share minimum until the account is up 50% from its starting balance. That is a rule in the prompt, not a guarantee. <strong>Do not deposit pUSD you cannot lose in full.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <h2>This is for a Polymarket account you already control.</h2>
+        <p class="section-lead">You need a computer, a Polymarket account that can hold pUSD, and four values from that account: API key, secret, passphrase, and the wallet private key. The app does not hold the money. It does not ask for your bank login.</p>
+        <div class="audience-cards">
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">🧭</div>
+            <h3>You want the 5-minute crypto board watched for you</h3>
+            <p>Every five minutes the assistant re-reads the crypto up/down markets, including any that end inside that same window. It bets only when it can write down an edge.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">⚡</div>
+            <h3>You do not want to build the scheduler yourself</h3>
+            <p>The installer sets up the local assistant, the encrypted key store, and the five-minute job. You paste the four Polymarket values and a Nous key. You do not edit PATH or write a cron file by hand.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">🔐</div>
+            <h3>You do not want a hosted bot holding your key</h3>
+            <p>KnightTrader Poly is not a cloud product. The app, the assistant, and the keys live on your computer. You can read the logs, stop the schedule, or uninstall it without asking anyone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <h2>What it actually does, in plain English</h2>
+        <p class="section-lead">KnightTrader Poly is a desktop app for Windows 11 and Apple Silicon Macs. It runs a local assistant against the Polymarket account whose keys you paste in. You watch the desk. You can stop it any time.</p>
+        <div class="plain-english-grid">
+          <div class="plain-english-card">
+            <div class="plain-english-num">1</div>
+            <div>
+              <h3>You fund Polymarket with pUSD</h3>
+              <p>That balance is the only money this app can use. Start small. The assistant is told not to size up until the account is 50% ahead of where it started.</p>
+            </div>
+          </div>
+          <div class="plain-english-card">
+            <div class="plain-english-num">2</div>
+            <div>
+              <h3>You paste four Polymarket values</h3>
+              <p>API key, secret, passphrase, and the wallet private key. They stay in an encrypted file on this PC. If the pasted API key is rejected, the app derives CLOB credentials from the private key and uses those for the account read.</p>
+            </div>
+          </div>
+          <div class="plain-english-card">
+            <div class="plain-english-num">3</div>
+            <div>
+              <h3>You install the app and add a Nous key</h3>
+              <p>Download the installer for your system and run it. Nous Portal needs a one-time ~$5 credit top-up, paid to Nous, before it will issue an AI key. After that the app picks a free model.</p>
+            </div>
+          </div>
+          <div class="plain-english-card">
+            <div class="plain-english-num">4</div>
+            <div>
+              <h3>The assistant checks every 5 minutes</h3>
+              <p>Each pass uses Polymarket CLOB v2. It scans crypto 5-minute up/down markets, scores the book, and either does nothing or buys the exchange minimum of 5 shares. Markets that expire within those five minutes are included only if the same edge test passes.</p>
+            </div>
+          </div>
+          <div class="plain-english-card">
+            <div class="plain-english-num">5</div>
+            <div>
+              <h3>You keep the kill switch</h3>
+              <p>Stop the schedule in the app, or quit the app. Closing the window leaves it in the tray. Your pUSD stays on Polymarket. Revoke the API key there if you want the app to lose access.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <h2>What it does not do</h2>
+        <p class="section-lead">A few limits, so you know what you are installing.</p>
+        <div class="not-grid">
+          <div class="not-item">
+            <span class="not-x" aria-hidden="true">×</span>
+            <div>
+              <strong>It does not guarantee profit.</strong>
+              <p>A 5-minute crypto contract can finish against you. The 5-share cap until +50% is an instruction, not a promise. You can lose the stake.</p>
+            </div>
+          </div>
+          <div class="not-item">
+            <span class="not-x" aria-hidden="true">×</span>
+            <div>
+              <strong>It does not hold your money.</strong>
+              <p>Funds stay in your Polymarket account. The app never sees your debit card, your bank login, or a withdrawal address.</p>
+            </div>
+          </div>
+          <div class="not-item">
+            <span class="not-x" aria-hidden="true">×</span>
+            <div>
+              <strong>It does not trade where Polymarket blocks you.</strong>
+              <p>New orders are rejected from a blocked network. The How-To names which free Proton countries Polymarket allows. If the geoblock check still says blocked, the app will not open a new order.</p>
+            </div>
+          </div>
+          <div class="not-item">
+            <span class="not-x" aria-hidden="true">×</span>
+            <div>
+              <strong>It does not run on a sleeping computer.</strong>
+              <p>The assistant needs this PC awake and online. The How-To tab shows how to stop Windows and macOS from sleeping.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-you-get" class="section">
+      <div class="container">
+        <h2>What you get — for <span data-kt-price>$39</span> flat</h2>
+        <p class="section-lead">One payment of <span data-kt-price>$39</span> is the app. Setup also needs a one-time ~$5 Nous Portal credit top-up, paid to Nous, to create the AI key. No KnightTrader subscription.</p>
+        <div class="value-grid">
+          <div class="value-card">
+            <div class="value-title">Polymarket desktop assistant</div>
+            <p>The KnightTrader Poly app, with the trading desk reading cash, portfolio value, and open positions from the Polymarket account tied to the keys you paste in.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Windows and Mac installers</div>
+            <p>An .exe for Windows 11, and an Apple Silicon .dmg. They install beside KnightTrader BloFin. The Mac build is not notarized: if macOS blocks it, right-click the app, choose Open, then Open again.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Five-minute crypto job</div>
+            <p>A local schedule that scans 5-minute crypto up/down markets, including markets ending within five minutes, and stays at 5 shares until the account is up 50% from its start.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Local desk</div>
+            <p>Equity and positions come from that Polymarket account. Decisions are written to a log on your PC.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">App updates</div>
+            <p>The app checks the KnightTrader Poly releases and can update itself. It does not update into KnightTrader BloFin.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Local keys</div>
+            <p>The API secret and the private key stay on this computer. They are not uploaded to KnightTrader.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section section-accent">
+      <div class="container">
+        <h2>Select your OS — download the installer</h2>
+        <p class="section-lead"><span data-kt-price>$39</span> one-time for the app, plus a one-time ~$5 Nous Portal credit top-up (paid to Nous) to create the AI key. Haven’t paid yet? <a href="https://mknight2690-sys.github.io/knighttrader-poly-payment/">The sales page is here</a>.</p>
+        <div class="download-card">
+          <div class="download-card-header">
+            <div class="download-card-platform" id="download-platform-name">Windows 11 or later</div>
+            <div class="download-card-version" id="download-version">Latest release: <strong id="download-latest">v1.0.0</strong></div>
+          </div>
+          <div class="platform-selector" role="radiogroup" aria-label="Choose your operating system">
+            <button class="platform-btn active" data-platform="windows" role="radio" aria-checked="true">Windows</button>
+            <button class="platform-btn" data-platform="mac" role="radio" aria-checked="false">Mac</button>
+          </div>
+          <div class="download-actions">
+            <button type="button" class="btn-primary btn-lg btn-download-windows">Download for Windows</button>
+            <button type="button" class="btn-primary btn-lg hidden btn-download-mac">Download for Mac</button>
+          </div>
+          <p class="download-note" id="download-note">Windows: download the KnightTrader Poly installer .exe, then double-click to install.</p>
+          <p class="download-fallback"><a id="download-release-link" href="https://github.com/mknight2690-sys/KnightTrader-Poly/releases" rel="noopener noreferrer">Browse all releases on GitHub ↗</a></p>
+        </div>
+        <p class="os-notice">Windows 11 or later. Mac: Apple Silicon, macOS 11 or later. The .dmg is not notarized.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What happens after you download</h2>
+        <p class="section-lead">Five steps. About 30–60 minutes the first time, most of it on Polymarket and Nous, not in a terminal.</p>
+        <ol class="steps">
+          <li>
+            <span class="step-number">1</span>
+            <div>
+              <strong>Run the installer</strong>
+              <p class="step-detail">On Windows, double-click the .exe. On a Mac, open the .dmg and drag KnightTrader Poly into Applications. If macOS says the developer cannot be verified, right-click the app and choose Open.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">2</span>
+            <div>
+              <strong>Open the How-To tab</strong>
+              <p class="step-detail">It walks through keeping the computer awake, creating the Nous key, and pasting the four Polymarket values. It does not send you to another exchange.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">3</span>
+            <div>
+              <strong>Enter the keys</strong>
+              <p class="step-detail">Paste the CLOB API key, secret, passphrase, and wallet private key. They stay on this PC. Then paste the Nous key created after the ~$5 credit top-up.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">4</span>
+            <div>
+              <strong>Install the assistant</strong>
+              <p class="step-detail">Use Install Hermes in the app, then auto-configure the five-minute job. The job name is separate from the BloFin app, so both can run.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">5</span>
+            <div>
+              <strong>Watch the Trading tab</strong>
+              <p class="step-detail">Cash, portfolio value, and open positions come from the Polymarket account those keys belong to. If a number looks wrong, stop the schedule before you add more pUSD.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Questions people actually ask</h2>
+        <div class="faq">
+          <details>
+            <summary>Does this work on a Mac?</summary>
+            <p>Yes, on Apple Silicon. Open the .dmg, drag the app into Applications, then right-click it and choose Open the first time if macOS blocks an unidentified developer. Intel Macs are not in this build.</p>
+          </details>
+          <details>
+            <summary>Can I run this next to KnightTrader BloFin?</summary>
+            <p>Yes. Poly uses its own data folder, its own ports, and its own updater. Installing it does not replace BloFin, and updating one does not update the other.</p>
+          </details>
+          <details>
+            <summary>What do I paste in?</summary>
+            <p>The Polymarket CLOB API key, secret, and passphrase, plus the wallet private key for that account. Anyone with their own four values can point the app at their own account. The pasted API key is tried first. If Polymarket rejects it, the app derives credentials from the private key for the account read.</p>
+          </details>
+          <details>
+            <summary>Do I need a VPN?</summary>
+            <p>Only if your own network is blocked. Free Proton usually lands in the Netherlands, Mexico, Canada, Singapore, Romania, Poland, or Japan. Use Mexico or Romania. Netherlands and Japan are usable for this app only when <code>https://polymarket.com/api/geoblock</code> says <code>blocked: false</code>. Do not use Poland, Singapore, or a generic Canada server.</p>
+          </details>
+          <details>
+            <summary>Where do the keys go?</summary>
+            <p>They stay on your machine, in an encrypted local store, and in the assistant’s local folder when you install it. They are not uploaded to KnightTrader.</p>
+          </details>
+          <details>
+            <summary>Is the $5 Nous cost recurring?</summary>
+            <p>Not from KnightTrader. Nous Portal requires a one-time ~$5 credit top-up, paid to Nous, before it will create an API key. After that the app selects free models. You pay Nous again only if you switch to a paid model or Nous changes its billing.</p>
+          </details>
+          <details>
+            <summary>Is this a subscription?</summary>
+            <p>No. <span data-kt-price>$39</span> once for the app, plus the separate Nous top-up. There is no KnightTrader membership check.</p>
+          </details>
+          <details>
+            <summary>How do I get an older build?</summary>
+            <p>Use the <a href="https://github.com/mknight2690-sys/KnightTrader-Poly/releases" target="_blank" rel="noopener">KnightTrader Poly releases page</a>.</p>
+          </details>
+          <details id="faq-risk">
+            <summary>Can I lose money?</summary>
+            <p><strong>Yes.</strong> These are short crypto up/down contracts. A wrong window loses the stake. Only deposit pUSD you can lose in full, and check the desk.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>KnightTrader Poly</strong> is a local desktop assistant for your Polymarket account. It is not a brokerage, not a custodian, and not financial advice. Five-minute crypto contracts can go to zero. By downloading and using this app, you accept full responsibility for the orders the assistant places.</p>
+      <p class="footer-meta">KnightTrader Poly — <span data-kt-price>$39</span> one-time, plus a one-time ~$5 Nous Portal credit top-up (paid to Nous). <a href="https://github.com/mknight2690-sys/KnightTrader-Poly">Source on GitHub</a> · <a href="https://mknight2690-sys.github.io/knighttrader-poly-payment/">Sales page</a>.</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="analytics.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
