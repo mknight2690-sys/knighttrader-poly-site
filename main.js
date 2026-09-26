@@ -5,7 +5,7 @@
   // Fallback used only if the GitHub API fetch fails after retries.
   // Kept in sync with the latest shipped release so a dead API still
   // serves a current (not stale) installer.
-  const FALLBACK_TAG = 'v1.0.1';
+  const FALLBACK_TAG = 'v1.0.2';
   const FALLBACK_VER = FALLBACK_TAG.replace(/^v/, '');
   let windowsUrl = `https://github.com/${owner}/${repo}/releases/download/${FALLBACK_TAG}/KnightTrader-Poly-Setup-${FALLBACK_VER}.exe`;
   let macUrl = `https://github.com/${owner}/${repo}/releases/download/${FALLBACK_TAG}/KnightTrader-Poly-${FALLBACK_VER}-arm64.dmg`;
